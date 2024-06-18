@@ -139,7 +139,7 @@ i{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 65vh; 
+    height:65vh; 
     width: 100%;
 }
 .items{
@@ -223,46 +223,73 @@ footer{
 }
 @media only screen and (max-width: 768px) {
     .prime{
-        background-image: url(assets/prime-sale.jpg);
-        background-size: cover;
-        max-width: 768px;
-        max-height: 28vh;
+        max-height: 23vh;
         background-position: center;
+    }
+}
+@media only screen and (max-width: 2560px) {
+    .prime{
+        max-height: 17vh;
+        background-position: center;
+        width: 100%;
+    }
+    footer{
+        margin-top: 25vh;
     }
 }
 @media only screen and (max-width: 425px) {
     .prime{
-        background-image: url(assets/prime-sale.jpg);
-        background-size: cover;
-        width: 425px;
-        max-height: 30vh;
+        max-height: 15vh;
         background-position: center;
     }
      .items{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
      }
      .laptop{
-        width: 100%;
+        width: 12rem;
+     }
+     .nav1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
+        /* flex-direction: column; */
+     }
+     .search{
+        grid-column: 2/span2;
+        /* align-self: center;
+        justify-self: center; */
+     }
+     .query{
+        grid-row: 1;
+        grid-column: 3;
+        gap: 0.8em;
      }
      .nav1 img{
         width: 78px;
      }
      .search select{
-        width: 20px;
+        width: 1.4rem;
      }
      .search input{
-        width: 100px;
-     }
-     .search span{
-        padding-right: 10px;
-        width: 30px;
-     }
-     .loc{
+        width: 6rem;
         font-size: 10px;
      }
+     .search input{
+        width: 15rem;
+     }
+     .search span{
+        padding: 9.2px 6px;
+     }
+     .loc{
+        /* grid-column: 1/2; */
+        font-size: 11px;
+        /* justify-self: left; */
+        margin-right: 0.78rem;
+     }
      .loc span{
-        font-size: 9px;
+        font-size: 8px;
      }
      .query{
         width: 200px;
